@@ -1,11 +1,16 @@
-public class Galaxy extends Phone{
+public class Galaxy implements Phone{
+    private final String brand;
 
-    public Galaxy(String brand , String name) {
-        super(brand , name);
+    public Galaxy(){
+        this.brand = "삼성폰";
     }
     @Override
-    public void turnOnText(){
-        System.out.println("*** 폰 켜지는중 ***");
+    public String getBrand() {
+        return brand;
     }
 
+    @Override
+    public void turnOn() {
+        System.out.println("*** 폰 켜지는 중 ***");
+    }
 }

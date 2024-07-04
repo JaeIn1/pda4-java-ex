@@ -1,11 +1,17 @@
-public class iPhone extends Phone{
-    public iPhone(String brand , String name) {
-        super(brand , name);
+public class iPhone implements Phone{
+    private final String brand;
+
+    public iPhone(){
+        this.brand = "애플폰";
+    }
+    @Override
+    public String getBrand() {
+        return brand;
     }
 
     @Override
-    public void turnOnText() {
-        System.out.println("@@@ 폰 켜지는중 @@@");
+    public void turnOn() {
+        System.out.println("@@@ 폰 켜지는 중 @@@");
     }
 }
 
