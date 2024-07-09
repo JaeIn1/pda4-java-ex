@@ -1,4 +1,4 @@
-public interface Phone {
+public interface Phone{
     String getBrand();
     void turnOn();
 }

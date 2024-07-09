@@ -1,4 +1,4 @@
-public class Person {
+public class Person{
     private final String name;
     private Phone phone;
     public Person(String name) {
@@ -9,6 +9,7 @@ public class Person {
         this.phone = phone;
         System.out.println(name + "님이 " + phone.getBrand() + "을 구매했습니다.");
     }
+
     public void turnOn(){
         if(phone != null){
             System.out.println(name + "님이 " + phone.getBrand() + "을 켰습니다.");
